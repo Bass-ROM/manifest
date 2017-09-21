@@ -7,7 +7,6 @@
   <remove-project name="device/generic/arm64" />
   <remove-project name="device/generic/armv7-a-neon" />
   <remove-project name="device/generic/car" />
-
   <remove-project name="device/generic/goldfish" />
   <remove-project name="device/generic/goldfish-opengl" />
   <remove-project name="device/generic/mini-emulator-arm64" />
@@ -19,7 +18,6 @@
   <remove-project name="device/generic/mips" />
   <remove-project name="device/generic/mips64" />
   <remove-project name="device/generic/qemu" />
-
   <remove-project name="device/google/accessory/arduino" />
   <remove-project name="device/google/accessory/demokit" />
   <remove-project name="device/google/atv" />
@@ -156,12 +154,12 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <project path="kernel/pc_common" name="kernel/common" remote="x86" revision="kernel-4.9" />
+  <project path="kernel/pc_common" name="kernel_pc_common" remote="bass" revision="k4.9-ax86-b" />
   <project path="art" name="platform_art" remote="bass" revision="oreo-x86" />
   <project path="bionic" name="platform_bionic" remote="bass" revision="oreo-x86"  />
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="oreo-x86" />
   <project path="device/generic/pc_common" name="device_generic_pc_common" remote="bass" revision="oreo-x86" />
-  <project path="device/generic/firmware" name="device/generic/firmware" remote="x86" revision="oreo-x86" />
+  <project path="device/generic/firmware" name="device_generic_firmware" remote="bass" revision="linux-fw" />
   <project path="device/generic/pc_x86" name="device_generic_pc_x86" remote="bass" revision="oreo-x86" />
   <project path="device/generic/pc_x86_64" name="device_generic_pc_x86_64" remote="bass" revision="oreo-x86" />
   <project path="external/alsa-lib" name="platform/external/alsa-lib" remote="x86" revision="oreo-x86" />
@@ -173,7 +171,6 @@
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs" remote="x86" revision="oreo-x86" />
   <project path="external/eject" name="platform/external/eject" remote="x86" revision="oreo-x86" />
   <project path="external/exfat" name="platform/external/exfat" remote="x86" revision="oreo-x86" />
-  <!-- <project path="external/ffmpeg" name="platform/external/ffmpeg" remote="x86" revision="oreo-x86" /> -->
   <project path="external/gbm_gralloc" name="platform/external/gbm_gralloc" remote="x86" revision="oreo-x86" />
   <project path="external/googleanalytics" name="platform/external/googleanalytics" remote="x86" revision="oreo-x86" />
   <project path="external/libdrm" name="platform/external/libdrm" remote="x86" revision="oreo-x86" />
@@ -183,7 +180,6 @@
   <project path="external/mksh" name="platform/external/mksh" remote="x86" revision="oreo-x86" />
   <project path="external/ntfs-3g" name="platform/external/ntfs-3g" remote="x86" revision="oreo-x86" />
   <project path="external/s2tc" name="platform/external/s2tc" remote="x86" revision="oreo-x86" />
-  <!-- <project path="external/stagefright-plugins" name="platform/external/stagefright-plugins" remote="x86" revision="oreo-x86" groups="notdefault" /> -->
   <project path="external/swiftshader" name="platform/external/swiftshader" remote="x86" revision="oreo-x86" />
   <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="oreo-x86" />
   <project path="frameworks/av" name="platform/frameworks/av" remote="x86" revision="oreo-x86" />
@@ -219,13 +215,11 @@
   
   <!-- LOS Files -->
   <project path="external/bash" name="LineageOS/android_external_bash" remote="github" revision="lineage-15.0" />
-  <!--<project path="external/exfat" name="LineageOS/android_external_exfat" remote="github" revision="lineage-15.0" /> -->
   <project path="external/fuse" name="LineageOS/android_external_fuse" remote="github" revision="lineage-15.0" />
   <project path="external/htop" name="LineageOS/android_external_htop" remote="github" revision="lineage-15.0" />
   <project path="external/libncurses" name="LineageOS/android_external_libncurses" remote="github" revision="lineage-15.0" />
   <project path="external/libnfc-nxp" name="LineageOS/android_external_libnfc-nxp" remote="github" revision="lineage-15.0" />
   <project path="external/nano" name="LineageOS/android_external_nano" remote="github" revision="lineage-15.0" />
-  <!-- <project path="packages/apps/Eleven" name="LineageOS/android_packages_apps_Eleven" remote="github" revision="lineage-15.0" /> -->
   <project path="packages/apps/FMRadio" name="LineageOS/android_packages_apps_FMRadio" remote="github" revision="lineage-15.0" />
   <project path="packages/apps/Jelly" name="LineageOS/android_packages_apps_Jelly" remote="github" revision="lineage-15.0" />
 
