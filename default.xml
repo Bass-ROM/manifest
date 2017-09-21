@@ -7,22 +7,25 @@
            remote="aosp"
            sync-c="true"
            sync-j="4" />
+           
+  <remote  name="github"
+           fetch="https://github.com" />
 
-  <project path="build/make" name="platform/build" groups="pdk" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-  <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
-  <project path="build/kati" name="platform/build/kati" groups="pdk,tradefed" />
-  <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
+  <remote  name="bass"
+           fetch="https://github.com/Bass-ROM"
+           revision="refs/heads/o" />
+
+  <remote  name="ROM-FIX"
+           fetch="https://github.com/ROM-FIXES"
+           revision="refs/heads/lineage-15.0" />
+           
+  <remote  name="x86"
+          fetch="git://git.osdn.net/gitroot/android-x86" />
+          
+  <remote  name="osdn"
+          fetch="git://git.osdn.net/gitroot" />
+
+  
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -600,6 +603,6 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <include name="android-x86.xml" />
+  <include name="bass_aosp_caf.xml" />
 
 </manifest>
