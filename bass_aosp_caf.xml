@@ -157,7 +157,7 @@
   </project>
 
   <project path="kernel/pc_common" name="kernel/common" remote="x86" revision="kernel-4.9" />
-  <project path="art" name="platform/art" remote="x86" revision="oreo-x86" />
+  <project path="art" name="platform_art" remote="bass" revision="oreo-x86" />
   <project path="bionic" name="platform_bionic" remote="bass" revision="oreo-x86"  />
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="oreo-x86" />
   <project path="device/generic/pc_common" name="device_generic_pc_common" remote="bass" revision="oreo-x86" />
