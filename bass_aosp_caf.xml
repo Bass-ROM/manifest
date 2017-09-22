@@ -158,7 +158,7 @@
   <project path="art" name="platform_art" remote="bass" revision="oreo-x86" />
   <project path="bionic" name="platform_bionic" remote="bass" revision="oreo-x86"  />
   <project path="frameworks/av" name="platform_frameworks_av" remote="bass" revision="oreo" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="bass" revision="oreo" groups="pdk-cw-fs,pdk-fs"/>
+  <project path="frameworks/base" name="platform_frameworks_base" remote="bass" revision="oreo" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="bass" revision="oreo" />
   <project path="vendor/bass" name="vendor_bass" remote="bass" revision="oreo" />
   
