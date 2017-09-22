@@ -153,10 +153,15 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-
+  <project path="external/aac" name="external_aac" groups="pdk" remote="bass" revision="oreo-release" />
   <project path="kernel/pc_common" name="kernel_pc_common" remote="bass" revision="k4.9-ax86-b" />
   <project path="art" name="platform_art" remote="bass" revision="oreo-x86" />
   <project path="bionic" name="platform_bionic" remote="bass" revision="oreo-x86"  />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="bass" revision="oreo" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="bass" revision="oreo" groups="pdk-cw-fs,pdk-fs"/>
+  <project path="frameworks/native" name="platform_frameworks_native" remote="bass" revision="oreo" />
+  <project path="vendor/bass" name="vendor_bass" remote="bass" revision="oreo" />
+  
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="oreo-x86" />
   <project path="device/generic/pc_common" name="device_generic_pc_common" remote="bass" revision="oreo-x86" />
   <project path="device/generic/firmware" name="device_generic_firmware" remote="bass" revision="linux-fw" />
@@ -182,9 +187,6 @@
   <project path="external/s2tc" name="platform/external/s2tc" remote="x86" revision="oreo-x86" />
   <project path="external/swiftshader" name="platform/external/swiftshader" remote="x86" revision="oreo-x86" />
   <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="oreo-x86" />
-  <project path="frameworks/av" name="platform/frameworks/av" remote="x86" revision="oreo-x86" />
-  <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="oreo-x86" />
-  <project path="frameworks/native" name="platform/frameworks/native" remote="x86" revision="oreo-x86" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" remote="x86" revision="oreo-x86" />
   <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="oreo-x86" />
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" remote="x86" revision="oreo-x86" />
@@ -199,6 +201,7 @@
   <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="oreo-x86" />
   <project path="hardware/ril" name="platform/hardware/ril" remote="x86" revision="oreo-x86" />
   <project path="hardware/x86power" name="platform/hardware/x86power" remote="x86" revision="oreo-x86" />
+  <project path="packages/apps/Bolt" name="packages_apps_Bolt" groups="pdk-fs" remote="bass" revision="oreo-release" />
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" remote="x86" revision="oreo-x86" />
   <project path="packages/apps/Eleven" name="platform/packages/apps/Eleven" remote="x86" revision="oreo-x86" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="x86" revision="oreo-x86" />
