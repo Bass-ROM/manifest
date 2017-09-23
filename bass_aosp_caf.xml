@@ -159,8 +159,9 @@
   <project path="bionic" name="platform_bionic" remote="bass" revision="oreo-x86"  />
   <project path="frameworks/av" name="platform_frameworks_av" remote="bass" revision="oreo" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="bass" revision="oreo" groups="pdk-cw-fs,pdk-fs" clone-depth="1" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="bass" revision="oreo" />
-  <project path="vendor/bass" name="vendor_bass" remote="bass" revision="oreo" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="bass" revision="oreo-x86" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="bass" revision="oreo" />
+  <project path="vendor/bass" name="platform_vendor_bass" remote="bass" revision="oreo" />
   
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="oreo-x86" />
   <project path="device/generic/pc_common" name="device_generic_pc_common" remote="bass" revision="oreo-x86" />
@@ -206,7 +207,6 @@
   <project path="packages/apps/Eleven" name="platform/packages/apps/Eleven" remote="x86" revision="oreo-x86" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="x86" revision="oreo-x86" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" remote="x86" revision="oreo-x86" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="x86" revision="oreo-x86" />
   <project path="packages/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="x86" revision="oreo-x86" />
   <project path="packages/apps/Taskbar" name="platform/packages/apps/Taskbar" remote="x86" revision="oreo-x86" />
   <project path="packages/services/Analytics" name="platform/packages/services/Analytics" remote="x86" revision="oreo-x86" />
